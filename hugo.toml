@@ -1,8 +1,8 @@
 baseURL = "/"
-title = "xxx学习笔记"
+title = "Golang 学习笔记"
 
 # Language settings
-contentDir = "content"
+contentDir = "content/zh-cn"
 defaultContentLanguage = "zh-cn"
 defaultContentLanguageInSubdir = false
 # Useful when translating.
@@ -59,9 +59,9 @@ languageName ="中文"
 # Weight used for sorting.
 weight = 1
 [languages.zh-cn.params]
-title = "xxx学习笔记"
-description = "xxx学习笔记，记录学习xxx的过程和相关资料"
-contentDir = "content"
+title = "Golang 学习笔记"
+description = "Golang学习笔记，记录学习 Golang 的过程和相关资料"
+contentDir = "content/zh-cn"
 time_format_default = "2006.01.02"
 time_format_blog = "2006.01.02"
 
@@ -106,12 +106,12 @@ version = "0.0"
 
 # A link to latest version of the docs. Used in the "version-banner" partial to
 # point people to the main doc site.
-url_latest_version = "https://skyao.io/learning-xxx"
+url_latest_version = "https://skyao.io/learning-go"
 
 # Repository configuration (URLs for in-page links to opening issues and suggesting changes)
-github_repo = "https://github.com/skyao/learning-xxx"
+github_repo = "https://github.com/skyao/learning-go"
 # An optional link to a related project repo. For example, the sibling repository where your product code lives.
-github_project_repo = "https://github.com/skyao/learning-xxx"
+github_project_repo = "https://github.com/skyao/learning-go"
 
 # Specify a value here if your content directory is not in your repo's root directory
 # github_subdir = ""

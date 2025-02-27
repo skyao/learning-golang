@@ -1,5 +1,5 @@
 ---
-title: "Learning xxxx"
+title: "Learning Golang"
 linkTitle: "学习笔记"
 weight: 1
 menu:
@@ -8,7 +8,7 @@ menu:
     pre: <i class='fas fa-book'></i>
 date: 2021-08-18
 description: >
-  xxxx学习笔记
+  Golang 学习笔记
 ---
 
 

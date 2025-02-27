@@ -1,12 +1,12 @@
 ---
-title: xxx学习笔记
+title: Golang 学习笔记
 ---
 
-{{< blocks/cover title="xxx学习笔记" image_anchor="top" height="full" >}}
+{{< blocks/cover title="Golang 学习笔记" image_anchor="top" height="full" >}}
 <a class="btn btn-lg btn-primary me-3 mb-4" href="./docs/">
   阅读笔记内容 <i class="fas fa-arrow-alt-circle-right ms-2"></i>
 </a>
-<a class="btn btn-lg btn-secondary me-3 mb-4" href="https://github.com/skyao/learning-xxx">
+<a class="btn btn-lg btn-secondary me-3 mb-4" href="https://github.com/skyao/learning-go">
   查看笔记源码 <i class="fab fa-github ms-2 "></i>
 </a>
 <p class="lead mt-5">Learning is not compulsory… neither is survival.</p>
