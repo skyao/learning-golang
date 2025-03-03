@@ -9,6 +9,13 @@ description: >
 
 ### 设置 GOPROXY
 
+查看默认的 goproxy 设置：
+
+```bash
+$ go env GOPROXY
+https://proxy.golang.org,direct
+```
+
 设置环境变量 GOPROXY 来设置 go module 公共代理仓库，代理并缓存go模块，以加速构建。
 
 ```bash
@@ -19,13 +26,18 @@ export GOPROXY="https://goproxy.cn,direct"
 
 可用的 goproxy 有：
 
-- 七牛：https://goproxy.cn
-- 阿里云：https://mirrors.aliyun.com/goproxy/
-- 官方（有全球 CDN 加速）：https://goproxy.io
-
-默认为 https://proxy.golang.org 。
+- 七牛："https://goproxy.cn,direct"
+- 阿里云："https://mirrors.aliyun.com/goproxy/,direct"
+- 官方（有全球 CDN 加速）："https://goproxy.io,direct"
 
 ### 设置私有模块
+
+查看默认的 GOPRIVATE 设置，默认为空：
+
+```bash
+$ go env GOPRIVATE
+
+```
 
 可以通过设置 GOPRIVATE 环境变量来控制私有仓库、依赖等 (如公司内部仓库) 不通过 goproxy 拉取，而是走本地：
 
@@ -36,6 +48,13 @@ export GOPRIVATE=*.someone.com
 ```
 
 ### 设置 GOSUMDB
+
+查看默认的 GOSUMDB 设置：
+
+```bash
+$ go env GOSUMDB
+sum.golang.org
+```
 
 如果遇到 GOSUMDB sum.golang.org 连接超时，则需要设置 GOSUMDB：
 
