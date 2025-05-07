@@ -31,27 +31,26 @@ https://help.sonatype.com/en/go-repositories.html#configuring-a-go-project-in-so
 
 注意：取消勾选 `Cache responses for content not present in the proxied repository` 选项。
 
-多建几个 proxy 仓库：
+创建两个 go proxy 仓库：
 
-- go-proxy-official: https://proxy.golang.org
 - go-proxy-official-io: https://goproxy.io/
 - go-proxy-cn: https://goproxy.cn
 
 其他备选（暂时不用）：
 
+- go-proxy-official: https://proxy.golang.org
 - go-proxy-aliyun: https://mirrors.aliyun.com/goproxy/
 - go-proxy-tencent: https://mirrors.cloud.tencent.com/go/
 - go-proxy-ustc: https://goproxy.cn
 
-再新建一个名为 go-proxy-all 的 group 类型的仓库，将上述 proxy 仓库添加进去，顺序为：
+再新建一个名为 go-public 的 group 类型的仓库，将上述 proxy 仓库添加进去，顺序为：
 
 - go-proxy-cn
 - go-proxy-official-io
-- go-proxy-official
 
 记录此时仓库的地址备用，如：
 
-http://192.168.0.246:8081/repository/go-proxy-all/
+http://192.168.3.91:8081/repository/go-public/
 
 
 ## 验证
@@ -128,7 +127,7 @@ $ ls /home/sky/work/soft/gopath/pkg/mod/github.com
  fatih           gofrs       microcosm-cc   sergi
  ```
 
- 打开 nexus，浏览 go-proxy-all 仓库地址，能看到这些 go module 已经被缓存：
+ 打开 nexus，浏览 go-public 仓库地址，能看到这些 go module 已经被缓存：
 
 ![](images/verify-group-all.png)
 
@@ -136,7 +135,7 @@ $ ls /home/sky/work/soft/gopath/pkg/mod/github.com
 
 ![](images/verify-proxy-cn.png)
 
-而排在顺序第二和第三位的代理仓库，则为空：
+而排在顺序第二的代理仓库，则为空：
 
 ![](images/verify-proxy-official.png)
 

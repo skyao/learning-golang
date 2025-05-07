@@ -33,7 +33,7 @@ export GOPROXY="https://goproxy.cn,direct"
 对于通过 nexus 建立了本地代理仓库的情况，设置为本地代理仓库的地址，如：
 
 ```bash
-export GOPROXY="http://192.168.0.246:8081/repository/go-proxy-all/,direct"
+export GOPROXY="http://192.168.3.91:8081/repository/go-public/,direct"
 ```
 
 ### 设置私有模块
