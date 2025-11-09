@@ -2,7 +2,7 @@
 title: "linux安装"
 linkTitle: "linux"
 weight: 30
-date: 2025-02-27
+date: 2025-11-09
 description: >
   在 linux 上安装 golang
 ---
@@ -16,7 +16,7 @@ sudo rm -rf /usr/local/go
 解压缩下载下来的 go1.xx.x.linux-amd64.tar.gz 文件：
 
 ```bash
-sudo tar -C /usr/local -xzf go1.25.3.linux-amd64.tar.gz
+sudo tar -C /usr/local -xzf go1.25.4.linux-amd64.tar.gz
 ```
 
 设置 GOROOT / GOPATH 然后将 GOROOT/bin 和 GOPATH/bin 加入到 PATH：
@@ -44,7 +44,7 @@ source ~/.zshrc
 
 ```bash
 $ go version
-go version go1.25.3 linux/amd64
+go version go1.25.4 linux/amd64
 
 $ env | grep GO
 GOROOT=/usr/local/go

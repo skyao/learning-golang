@@ -2,7 +2,7 @@
 title: "nexus"
 linkTitle: "nexus"
 weight: 15
-date: 2025-02-27
+date: 2025-11-09
 description: >
   为 golang 项目添加 nexus 的代理
 ---
@@ -50,7 +50,7 @@ https://help.sonatype.com/en/go-repositories.html#configuring-a-go-project-in-so
 
 记录此时仓库的地址备用，如：
 
-http://192.168.3.91:8081/repository/go-public/
+http://192.168.3.193:8081/repository/go-public/
 
 
 ## 验证

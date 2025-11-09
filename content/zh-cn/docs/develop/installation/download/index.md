@@ -15,12 +15,12 @@ https://go.dev/dl/
 
 windows 选择 msi 安装文件:
 
-https://go.dev/dl/go1.25.3.windows-amd64.msi
+https://go.dev/dl/go1.25.4.windows-amd64.msi
 
 linux 下选择 tar.gz 压缩文件:
 
 ```bash
-wget https://go.dev/dl/go1.25.3.linux-amd64.tar.gz
+wget https://go.dev/dl/go1.25.4.linux-amd64.tar.gz
 ```
 
 版本一般选最新。

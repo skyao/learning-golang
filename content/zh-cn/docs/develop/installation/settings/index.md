@@ -27,7 +27,7 @@ vi ~/.zshrc
 增加内容:
 
 ```bash
-export GOPROXY="http://192.168.3.91:8081/repository/go-public/,direct"
+export GOPROXY="http://192.168.3.193:8081/repository/go-public/,direct"
 ```
 
 重新装载:
